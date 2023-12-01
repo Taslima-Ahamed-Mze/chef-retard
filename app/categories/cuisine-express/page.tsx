@@ -28,11 +28,8 @@ export default function Projects() {
           <div className="container mx-auto w-full px-5 py-6">
             <div className="grid gap-y-6 lg:grid-cols-3 ">
               {expressRecipesData.map((d, index) => (
-                <div key={index} className="max-w-xs mx-4 mb-2 rounded-lg shadow-lg flex-1">
-                  <img
-                    className=" h-48 w-full"
-                    src={d.imgSrc}
-                    alt={d.title}
+                <div key={index} className="mx-4 mb-2 max-w-xs flex-1 rounded-lg shadow-lg">
+                  <img className=" h-48 w-full" src={d.imgSrc} alt={d.title}
                   />
                   <div className="px-6 py-4">
                     <div className="mb-3 text-xl font-semibold uppercase tracking-tight text-green-600 ">

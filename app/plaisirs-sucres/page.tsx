@@ -32,7 +32,7 @@ export default function Projects() {
             <div className="grid gap-y-6 lg:grid-cols-2">
               <div className="mx-4 mb-2 max-w-xs flex-1 rounded-lg shadow-lg">
                 <img className="h-48 w-full" src={Confort.src}
-                  alt="Image comfort" />
+                  alt="comfort" />
                 <div className="px-6 py-4">
                   <div className="mb-3 text-xl font-semibold uppercase tracking-tight text-green-600">
                     Cuisine Réconfortante
@@ -55,7 +55,7 @@ export default function Projects() {
               </div>
               <div className="mx-4 mb-2 max-w-xs rounded-lg shadow-lg">
                 <img className="h-48 w-full" src={Express.src}
-                  alt="Image express" />
+                  alt="express" />
                 <div className="px-6 py-4">
                   <div className="mb-3 text-xl font-semibold uppercase tracking-tight text-green-600">
                     Cuisine Express
@@ -79,7 +79,7 @@ export default function Projects() {
 
               <div className="mx-4 mb-2 max-w-xs  rounded-lg shadow-lg">
                 <img className=" h-48 w-full" src={Vegetarien.src}
-                  alt="Image vegie" />
+                  alt="vegie" />
                 <div className="px-6 py-4">
                   <div className="mb-3 text-xl font-semibold uppercase tracking-tight text-green-600">
                     Délices Végétariens
@@ -103,7 +103,7 @@ export default function Projects() {
 
               <div className="mx-4 mb-2 max-w-xs rounded-lg shadow-lg">
                 <img className="h-48 w-full" src={Dessert.src}
-                  alt="Image dessert" />
+                  alt="dessert" />
                 <div className="px-6 py-4">
                   <div className="mb-3 text-xl font-semibold uppercase tracking-tight text-green-600">
                     Plaisirs Sucrés

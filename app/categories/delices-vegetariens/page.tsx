@@ -25,7 +25,7 @@ export default function Projects() {
           <div className="container mx-auto w-full px-5 py-6">
             <div className="grid gap-y-6 lg:grid-cols-3">
               {vegetarianRecipesData.map((d, index) => (
-                <div key={index} className="max-w-xs mx-4 mb-2 rounded-lg shadow-lg flex-1">
+                <div key={index} className="mx-4 mb-2 max-w-xs flex-1 rounded-lg shadow-lg">
                   <img className="h-48 w-full" src={d.imgSrc}
                     alt={d.title} />
                   <div className="px-6 py-4">
@@ -40,7 +40,9 @@ export default function Projects() {
                       as={`/delices-vegetariens/${d.slug}`}
                       className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
                     >
-                      <button className="px-4 py-2 bg-green-600 text-green-50">Lire la recette</button>
+                      <button className="px-4 py-2 bg-green-600 text-green-50">
+                        Lire la recette
+                      </button>
                     </Link>
                   </div>
                 </div>

@@ -1,19 +1,19 @@
-import vegetarianRecipesData from '@/data/vegetarianRecipesData';
+import vegetarianRecipesData from '@/data/vegetarianRecipesData'
 import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Recette' })
 
 export default function Recipe({ params }: { params: { slug: string } }) {
   const slug = decodeURI(params.slug)
-  const recipe = vegetarianRecipesData.find((recipe) => recipe.slug === slug);
+  const recipe = vegetarianRecipesData.find((recipe) => recipe.slug === slug)
   if (!recipe) {
     return (
       <div>
         <p>Recette non trouvée</p>
       </div>
-    );
+    )
   }
-  const { title, longDescription, ingredients, imgSrc } = recipe;
+  const { title, longDescription, ingredients, imgSrc } = recipe
 
   return (
     <>
@@ -37,7 +37,6 @@ export default function Recipe({ params }: { params: { slug: string } }) {
                       </li>
                     ))}
                   </ul>
-
                 </div>
               </div>
               <div className="w-full md:w-1/2">

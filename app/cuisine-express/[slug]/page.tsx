@@ -1,11 +1,11 @@
-import expressRecipesData from '@/data/expressRecipesData';
+import expressRecipesData from '@/data/expressRecipesData'
 import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Recette' })
 
 export default function Recipe({ params }: { params: { slug: string } }) {
   const slug = decodeURI(params.slug)
-  const recipe = expressRecipesData.find((recipe) => recipe.slug === slug);
+  const recipe = expressRecipesData.find((recipe) => recipe.slug === slug)
   if (!recipe) {
     // Vous pouvez afficher un message ou rediriger vers une page d'erreur 404
     return (
@@ -14,7 +14,7 @@ export default function Recipe({ params }: { params: { slug: string } }) {
       </div>
     );
   }
-  const { title, longDescription, ingredients, imgSrc } = recipe;
+  const { title, longDescription, ingredients, imgSrc } = recipe
 
   return (
     <>
@@ -38,7 +38,6 @@ export default function Recipe({ params }: { params: { slug: string } }) {
                       </li>
                     ))}
                   </ul>
-
                 </div>
               </div>
               <div className="w-full md:w-1/2">

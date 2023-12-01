@@ -13,14 +13,14 @@ export default function Projects() {
             Catégories de recettes
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Bienvenue dans les catégories de recettes du Chef Retard, où l'excellence culinaire se 
-            marie harmonieusement avec le charme du décalage temporel. Explorez un monde où chaque 
-            catégorie est une invitation à savourer l'art délicieux de notre chef, qui, malgré le 
-            retard, excelle toujours dans la création de plats exceptionnels. Laissez-vous emporter 
-            par des recettes qui transcendent le temps, offrant une expérience gustative d'une 
-            qualité inégalée. Découvrez l'exception culinaire dans chaque catégorie, où l'attente 
-            devient une promesse de délices extraordinaires, tous orchestrés avec maestria par notre 
-            Chef Retard.          
+            Bienvenue dans les catégories de recettes du Chef Retard, où l'excellence culinaire se
+            marie harmonieusement avec le charme du décalage temporel. Explorez un monde où chaque
+            catégorie est une invitation à savourer l'art délicieux de notre chef, qui, malgré le
+            retard, excelle toujours dans la création de plats exceptionnels. Laissez-vous emporter
+            par des recettes qui transcendent le temps, offrant une expérience gustative d'une
+            qualité inégalée. Découvrez l'exception culinaire dans chaque catégorie, où l'attente
+            devient une promesse de délices extraordinaires, tous orchestrés avec maestria par notre
+            Chef Retard.
           </p>
         </div>
         <section className="mt-8 bg-white">
@@ -34,7 +34,7 @@ export default function Projects() {
                   imgSrc={d.imgSrc}
                   href={d.href}
                 />
-              ))} 
+              ))}
             </div>
           </div>
         </section>
