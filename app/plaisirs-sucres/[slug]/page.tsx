@@ -1,9 +1,6 @@
 import sweetRecipesData from '@/data/sweetRecipesData';
-import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
-import Link from '@/components/Link'
-import categoriesData from '@/data/categoriesData'
-import { useRouter } from 'next/navigation'
+
 
 
 

@@ -1,13 +1,9 @@
 import sweetRecipesData from '@/data/sweetRecipesData'
-import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
 import Link from '@/components/Link'
 
 
-import Confort from '@/data/categories/confort.webp'
-import Express from '@/data/categories/fast.webp'
-import Vegetarien from '@/data/categories/vegetarian.webp'
-import Dessert from '@/data/categories/dessert.webp'
+
 
 export const metadata = genPageMetadata({ title: 'Plaisirs sucrés' })
 
