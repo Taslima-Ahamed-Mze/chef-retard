@@ -3,8 +3,8 @@ import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Recette' })
 
-export default function Recipe({ params}: { params: { slug: string } }) {
-  const slug  = decodeURI(params.slug)
+export default function Recipe({ params }: { params: { slug: string } }) {
+  const slug = decodeURI(params.slug)
   const recipe = expressRecipesData.find((recipe) => recipe.slug === slug);
   if (!recipe) {
     // Vous pouvez afficher un message ou rediriger vers une page d'erreur 404
@@ -23,25 +23,26 @@ export default function Recipe({ params}: { params: { slug: string } }) {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {longDescription}
-          </p>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{longDescription}</p>
         </div>
-        <section className="px-2 py-32 bg-white md:px-0">
-          <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+        <section className="bg-white px-2 py-32 md:px-0">
+          <div className="container mx-auto max-w-6xl items-center px-8 xl:px-5">
             <div className="flex flex-wrap items-center sm:-mx-3">
               <div className="w-full md:w-1/2 md:px-3">
-                <div className="w-full pb-6 space-y-4 sm:max-w-md lg:max-w-lg lg:space-y-4 lg:pr-0 md:pb-0">
+                <div className="w-full space-y-4 pb-6 sm:max-w-md md:pb-0 lg:max-w-lg lg:space-y-4 lg:pr-0 ">
                   <h2 className="text-4xl text-green-600">Ingrédients</h2>
-                  <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                  <ul className="max-w-md list-inside list-disc space-y-1 text-gray-500  dark:text-gray-400">
                     {ingredients.map((ingredient, index) => (
-                      <li key={index}>{ingredient.quantity} {ingredient.unit} {ingredient.name}</li>
+                      <li key={index}>
+                        {ingredient.quantity} {ingredient.unit} {ingredient.name}
+                      </li>
                     ))}
                   </ul>
+
                 </div>
               </div>
               <div className="w-full md:w-1/2">
-                <div className="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
+                <div className="h-auto w-full overflow-hidden rounded-md shadow-xl sm:rounded-xl">
                   <img src={imgSrc} alt={title} />
                 </div>
               </div>

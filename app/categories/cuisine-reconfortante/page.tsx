@@ -13,16 +13,16 @@ export default function Projects() {
             Recettes réconfortantes
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Explorez notre Cuisine Réconfortante, où chaque plat, orchestré avec l'attention d'un 
-            chef, transcende tout retard pour offrir un réconfort immédiat et délicieux.          
+            Explorez notre Cuisine Réconfortante, où chaque plat, orchestré avec l'attention d'un
+            chef, transcende tout retard pour offrir un réconfort immédiat et délicieux.
           </p>
         </div>
         <section className="mt-8 bg-white">
           <div className="container mx-auto w-full px-5 py-6">
             <div className="grid gap-y-6 lg:grid-cols-3">
               {comfortingRecipesData.map((d, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="max-w-xs mx-4 mb-2 rounded-lg shadow-lg flex-1"
                 >
                   <img className=" h-48 w-full" src={d.imgSrc}
@@ -35,17 +35,17 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center  p-4">
                     <Link
-                      href="/cuisine-reconfortante/[slug]" 
+                      href="/cuisine-reconfortante/[slug]"
                       as={`/cuisine-reconfortante/${d.slug}`}
                       className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
                     >
                       <button className="bg-green-600 px-4 py-2 text-green-50">
                         Lire la recette
-                      </button> 
+                      </button>
                     </Link>
                   </div>
                 </div>
-              ))} 
+              ))}
             </div>
           </div>
         </section>

@@ -13,12 +13,12 @@ export default function Projects() {
             Recettes sucrées
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Plongez dans l'expérience sucrée du Chef Retard, une fusion délectable de saveurs et de 
-            textures qui transcende le temps. Réveillez vos papilles avec cette création sucrée, un 
-            équilibre parfait de douceurs qui apporte réconfort et satisfaction. Succombez à cette 
-            délicieuse tentation du chef, créant des souvenirs gustatifs inoubliables malgré le 
-            léger retard.          
-          </p>        
+            Plongez dans l'expérience sucrée du Chef Retard, une fusion délectable de saveurs et de
+            textures qui transcende le temps. Réveillez vos papilles avec cette création sucrée, un
+            équilibre parfait de douceurs qui apporte réconfort et satisfaction. Succombez à cette
+            délicieuse tentation du chef, créant des souvenirs gustatifs inoubliables malgré le
+            léger retard.
+          </p>
         </div>
         <section className="mt-8 bg-white">
           <div className="container mx-auto w-full px-5 py-6">
@@ -35,18 +35,18 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center  p-4">
                     <Link
-                      href="/plaisirs-sucres/[slug]" 
+                      href="/plaisirs-sucres/[slug]"
                       as={`/plaisirs-sucres/${d.slug}`}
                       className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
                     >
                       <button className="bg-green-600 px-4 py-2 text-green-50">
                         Lire la recette
-                        </button> 
+                      </button>
                     </Link>
                   </div>
                 </div>
 
-              ))} 
+              ))}
             </div>
           </div>
         </section>
