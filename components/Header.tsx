@@ -5,7 +5,6 @@ import Logo from '@/data/chef-retard.webp'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
-import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
