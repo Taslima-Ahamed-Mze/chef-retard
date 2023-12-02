@@ -45,10 +45,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'plaisirs-sucres/crepes-gourmandes',
     'plaisirs-sucres/brownies-fondants',
     'plaisirs-sucres/panna-cotta-fruits-rouges',
-  ].map(
-      (route) => ({
-        url: `${siteUrl}/${route}`,
-        lastModified: new Date().toISOString().split('T')[0],
-      }))
+  ].map((route) => ({
+    url: `${siteUrl}/${route}`,
+    lastModified: new Date().toISOString().split('T')[0],
+  }))
   return [...routes, ...blogRoutes]
 }
