@@ -35,7 +35,7 @@ export default function Home({ posts }) {
                 <p className="mx-auto text-base text-gray-500 sm:max-w-md md:max-w-3xl lg:text-xl">
                   C'est ici que l'attente devient une anticipation joyeuse, où chaque plat est une
                   promesse d'excitation gustative. Le Chef Retard s'engage à révéler le meilleur de
-                  chaque ingrédient, à permettre aux saveurs de se marier harmonieusement, sans hâte 
+                  chaque ingrédient, à permettre aux saveurs de se marier harmonieusement, sans hâte
                   excessive.
                 </p>
               </div>
