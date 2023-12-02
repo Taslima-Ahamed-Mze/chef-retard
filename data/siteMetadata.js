@@ -1,7 +1,7 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'Chef Retard',
-  author: 'Taslima',
+  author: 'Taslima Ahamed Mze',
   headerTitle: 'Chef Retard',
   description: 'Découvrez les meilleures recettes du Chef Retard',
   language: 'fr', // Assurez-vous de définir la langue correcte
@@ -11,7 +11,7 @@ const siteMetadata = {
   siteLogo: '/static/images/chef-retard.png', // Assurez-vous d'avoir votre propre logo
   socialBanner: '/static/images/twitter-card.png', // Ajoutez votre propre bannière sociale
   mastodon: 'https://mastodon.social/@votrenom',
-  email: 'votre@email.com',
+  email: 'ataslima@myges.fr',
   github: 'https://github.com/votreutilisateur',
   twitter: 'https://twitter.com/VotreTwitter',
   facebook: 'https://facebook.com/VotreFacebook',
