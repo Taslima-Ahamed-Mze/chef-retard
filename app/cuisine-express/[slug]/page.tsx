@@ -1,5 +1,6 @@
 import expressRecipesData from '@/data/expressRecipesData'
 import { genPageMetadata } from 'app/seo'
+import Image from 'next/image'
 
 export const metadata = genPageMetadata({ title: 'Recette' })
 
@@ -12,7 +13,7 @@ export default function Recipe({ params }: { params: { slug: string } }) {
       <div>
         <p>Recette non trouvée</p>
       </div>
-    );
+    )
   }
   const { title, longDescription, ingredients, imgSrc } = recipe
 
@@ -42,7 +43,7 @@ export default function Recipe({ params }: { params: { slug: string } }) {
               </div>
               <div className="w-full md:w-1/2">
                 <div className="h-auto w-full overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-                  <img src={imgSrc} alt={title} />
+                  <Image src={imgSrc} alt={title} layout="responsive" width={500} height={300} objectFit="cover"/>
                 </div>
               </div>
             </div>

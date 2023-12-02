@@ -13,7 +13,7 @@ const Header = () => {
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
             <div className="mr-3">
-              <img src={Logo.src} alt="Chef Retard Logo" />
+              <Image src={Logo} alt="Chef Retard Logo" />
             </div>
           </div>
         </Link>
