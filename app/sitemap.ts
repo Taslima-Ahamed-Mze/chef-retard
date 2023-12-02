@@ -12,11 +12,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: post.lastmod || post.date,
     }))
 
-  const routes = ['', 'categories', 'conseils', 'contact', 'categories/cuisine-reconfortante'].map((route) => ({
-
-    url: `${siteUrl}/${route}`, 
-    lastModified: new Date().toISOString().split('T')[0], 
-    
+  const routes = ['', 'categories', 'conseils', 'contact', 'categories/cuisine-reconfortante'].map((route) => (
+    {
+      url: `${siteUrl}/${route}`, 
+      lastModified: new Date().toISOString().split('T')[0], 
   })
   )
 
