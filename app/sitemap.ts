@@ -13,14 +13,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
 
   const routes = [
-  '', 
-  'categories', 
-  'conseils', 
-  'contact', 
-  'categories/cuisine-reconfortante', 
-  'categories/cuisine-express', 
-  'categories/delices-vegetariens', 
-  'categories/plaisirs-sucres', 
+    '',
+    'categories',
+    'conseils',
+    'contact',
+    'categories/cuisine-reconfortante',
+    'categories/cuisine-express',
+    'categories/delices-vegetariens',
+    'categories/plaisirs-sucres',
     'cuisine-reconfortante/soupe-hiver',
     'cuisine-reconfortante/poulet-roti-herbes',
     'cuisine-reconfortante/gratin-dauphinois-cremeux',
@@ -44,10 +44,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'plaisirs-sucres/tiramisu-classique',
     'plaisirs-sucres/crepes-gourmandes',
     'plaisirs-sucres/brownies-fondants',
-    'plaisirs-sucres/panna-cotta-fruits-rouges',].map(
-  (route) => ({
-    url: `${siteUrl}/${route}`,
-    lastModified: new Date().toISOString().split('T')[0],
-  }))
+    'plaisirs-sucres/panna-cotta-fruits-rouges',
+  ].map(
+      (route) => ({
+        url: `${siteUrl}/${route}`,
+        lastModified: new Date().toISOString().split('T')[0],
+      }))
   return [...routes, ...blogRoutes]
 }
