@@ -24,7 +24,14 @@ export default function Projects() {
               {comfortingRecipesData.map((d, index) => (
                 <div key={index} className="mx-4 mb-2 max-w-xs rounded-lg shadow-lg flex-1"
                 >
-                  <Image src={d.imgSrc} alt={d.title} layout="responsive" width={500} height={300} objectFit="cover" />
+                  <Image
+                    src={d.imgSrc}
+                    alt={d.title}
+                    layout="responsive"
+                    width={500}
+                    height={300}
+                    objectFit="cover"
+                  />
                   <div className="px-6 py-4">
                     <div className="mb-3 text-xl font-semibold uppercase tracking-tight text-green-600">
                       {d.title}

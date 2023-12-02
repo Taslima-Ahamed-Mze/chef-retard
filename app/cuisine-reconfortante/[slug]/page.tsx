@@ -42,7 +42,14 @@ export default function Recipe({ params }: { params: { slug: string } }) {
               </div>
               <div className="w-full md:w-1/2">
                 <div className="h-auto w-full overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-                  <Image src={imgSrc} alt={title} layout="responsive" width={500} height={300} objectFit="cover"/>
+                  <Image
+                    src={imgSrc}
+                    alt={title}
+                    layout="responsive"
+                    width={500}
+                    height={300}
+                    objectFit="cover"
+                  />
                 </div>
               </div>
             </div>

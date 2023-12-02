@@ -40,7 +40,14 @@ export default function Home({ posts }) {
               </div>
               <div className="w-full md:w-1/2">
                 <div className="h-auto w-full overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-                  <Image src={Chef} alt="Le Chef"  layout="responsive" width={500} height={300} objectFit="cover"/>
+                  <Image
+                    src={Chef}
+                    alt="Le Chef"
+                    layout="responsive"
+                    width={500}
+                    height={300}
+                    objectFit="cover"
+                  />
                 </div>
               </div>
             </div>
@@ -54,13 +61,13 @@ export default function Home({ posts }) {
           </div>
           <div className="container mx-auto grid gap-4 lg:grid-cols-3">
             <div className="w-full rounded">
-              <Image src={Pasta} alt="Pattes du chef" className="h-80 w-full object-cover"/>
+              <Image src={Pasta} alt="Pattes du chef" className="h-80 w-full object-cover" />
             </div>
             <div className="w-full rounded">
-              <Image src={Beef} alt="Assiète boeuf du chef" className="h-80 w-full object-cover"/>
+              <Image src={Beef} alt="Assiète boeuf du chef" className="h-80 w-full object-cover" />
             </div>
             <div className="w-full rounded">
-              <Image src={Veloute} alt="veloute du chef" className="h-80 w-full object-cover"/>
+              <Image src={Veloute} alt="veloute du chef" className="h-80 w-full object-cover" />
             </div>
           </div>
         </section>
