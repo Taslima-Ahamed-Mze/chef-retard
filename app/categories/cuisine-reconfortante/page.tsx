@@ -22,7 +22,7 @@ export default function Projects() {
           <div className="container mx-auto w-full px-5 py-6">
             <div className="grid gap-y-6 lg:grid-cols-3">
               {comfortingRecipesData.map((d, index) => (
-                <div key={index} className="mx-4 mb-2 max-w-xs rounded-lg shadow-lg flex-1"
+                <div key={index} className="mx-4 mb-2 max-w-xs flex-1 rounded-lg shadow-lg"
                 >
                   <Image
                     src={d.imgSrc}

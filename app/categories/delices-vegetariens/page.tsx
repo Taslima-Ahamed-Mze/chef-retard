@@ -47,7 +47,7 @@ export default function Projects() {
                       as={`/delices-vegetariens/${d.slug}`}
                       className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
                     >
-                      <button className="px-4 py-2 bg-green-600 text-green-50">
+                      <button className="bg-green-600 px-4 py-2 text-green-50">
                         Lire la recette
                       </button>
                     </Link>
